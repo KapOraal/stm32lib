@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="cdt.managedbuild.config.gnu.cross.exe.debug.1371675403">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.cross.exe.debug.1371675403" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.cross.exe.debug.1371675403" name="Debug" parent="cdt.managedbuild.config.gnu.cross.exe.debug" postbuildStep="arm-none-eabi-objcopy -S  -O binary  &quot;${ProjName}&quot; &quot;${ProjName}.bin&quot; ; arm-none-eabi-objdump -h -S -C  &quot;${ProjName}&quot; &gt; &quot;${ProjName}.lss&quot; ; arm-none-eabi-size &quot;${ProjName}&quot;" prebuildStep="arm-none-eabi-gcc --version">
+					<folderInfo id="cdt.managedbuild.config.gnu.cross.exe.debug.1371675403." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.cross.exe.debug.1910529433" name="Cross GCC" superClass="cdt.managedbuild.toolchain.gnu.cross.exe.debug">
+							<option id="cdt.managedbuild.option.gnu.cross.prefix.1004696994" name="Prefix" superClass="cdt.managedbuild.option.gnu.cross.prefix" value="arm-none-eabi-" valueType="string"/>
+							<option id="cdt.managedbuild.option.gnu.cross.path.267142074" name="Path" superClass="cdt.managedbuild.option.gnu.cross.path" value="" valueType="string"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.targetPlatform.gnu.cross.1744273681" isAbstract="false" osList="all" superClass="cdt.managedbuild.targetPlatform.gnu.cross"/>
+							<builder buildPath="${workspace_loc:/qwe/Debug}" id="cdt.managedbuild.builder.gnu.cross.230409091" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="cdt.managedbuild.builder.gnu.cross"/>
+							<tool id="cdt.managedbuild.tool.gnu.cross.c.compiler.130729695" name="Cross GCC Compiler" superClass="cdt.managedbuild.tool.gnu.cross.c.compiler">
+								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.1446297296" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.1302617414" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.misc.other.1438149695" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-c -mthumb -mcpu=cortex-m3 -mfix-cortex-m3-ldrd -mlong-calls -std=gnu99" valueType="string"/>
+								<option id="gnu.c.compiler.option.optimization.flags.228596513" name="Other optimization flags" superClass="gnu.c.compiler.option.optimization.flags" value="-fdata-sections -ffunction-sections" valueType="string"/>
+								<option id="gnu.c.compiler.option.include.paths.1660492699" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="../Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x"/>
+									<listOptionValue builtIn="false" value="../Libraries/CMSIS/CM3/CoreSupport"/>
+									<listOptionValue builtIn="false" value="../Libraries/STM32F10x_StdPeriph_Driver/inc"/>
+									<listOptionValue builtIn="false" value="../src"/>
+									<listOptionValue builtIn="false" value="../libxsvf"/>
+									<listOptionValue builtIn="false" value="../include"/>
+									<listOptionValue builtIn="false" value="../."/>
+									<listOptionValue builtIn="false" value="../Utilities"/>
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.581338403" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="USE_FULL_ASSERT"/>
+									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
+									<listOptionValue builtIn="false" value="STM32F10X_CL"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1767316604" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.compiler.1907541137" name="Cross G++ Compiler" superClass="cdt.managedbuild.tool.gnu.cross.cpp.compiler">
+								<option id="gnu.cpp.compiler.option.optimization.level.1560570404" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.151154137" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.other.other.789872062" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -mthumb -mcpu=cortex-m3 -mfix-cortex-m3-ldrd -mlong-calls -std=gnu++0x -fno-rtti -fno-exceptions" valueType="string"/>
+								<option id="gnu.cpp.compiler.option.optimization.flags.2078967766" name="Other optimization flags" superClass="gnu.cpp.compiler.option.optimization.flags" value="-fdata-sections -ffunction-sections" valueType="string"/>
+								<option id="gnu.cpp.compiler.option.include.paths.1331164963" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="../Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x"/>
+									<listOptionValue builtIn="false" value="../Libraries/CMSIS/CM3/CoreSupport"/>
+									<listOptionValue builtIn="false" value="../Libraries/STM32F10x_StdPeriph_Driver/inc"/>
+									<listOptionValue builtIn="false" value="../src"/>
+									<listOptionValue builtIn="false" value="../libxsvf"/>
+									<listOptionValue builtIn="false" value="../include"/>
+									<listOptionValue builtIn="false" value="../."/>
+									<listOptionValue builtIn="false" value="../Utilities"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.730380292" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="USE_FULL_ASSERT"/>
+									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
+									<listOptionValue builtIn="false" value="STM32F10X_CL"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1733256906" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cross.c.linker.435439086" name="Cross GCC Linker" superClass="cdt.managedbuild.tool.gnu.cross.c.linker"/>
+							<tool command="g++" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" id="cdt.managedbuild.tool.gnu.cross.cpp.linker.220379718" name="Cross G++ Linker" superClass="cdt.managedbuild.tool.gnu.cross.cpp.linker">
+								<option id="gnu.cpp.link.option.flags.1161810977" name="Linker flags" superClass="gnu.cpp.link.option.flags" value="-T &quot;${ProjDirPath}/system/stm32flash.ld&quot;  -mthumb -mcpu=cortex-m3 -mfix-cortex-m3-ldrd   -Wl,-Map=linker.map -Wl,-cref  -Wl,--gc-sections -lc -lm -lstdc++" valueType="string"/>
+								<option id="gnu.cpp.link.option.nostdlibs.25971663" name="No startup or default libs (-nostdlib)" superClass="gnu.cpp.link.option.nostdlibs" value="false" valueType="boolean"/>
+								<option id="gnu.cpp.link.option.nodeflibs.1982043875" name="Do not use default libraries (-nodefaultlibs)" superClass="gnu.cpp.link.option.nodeflibs" value="false" valueType="boolean"/>
+								<option id="gnu.cpp.link.option.nostart.1230407790" name="Do not use standard start files (-nostartfiles)" superClass="gnu.cpp.link.option.nostart" value="true" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.740272495" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cross.archiver.1498796259" name="Cross GCC Archiver" superClass="cdt.managedbuild.tool.gnu.cross.archiver"/>
+							<tool id="cdt.managedbuild.tool.gnu.cross.assembler.346289754" name="Cross GCC Assembler" superClass="cdt.managedbuild.tool.gnu.cross.assembler">
+								<option id="gnu.both.asm.option.include.paths.1877229447" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="../Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x"/>
+									<listOptionValue builtIn="false" value="../Libraries/CMSIS/CM3/CoreSupport"/>
+									<listOptionValue builtIn="false" value="../Libraries/STM32F10x_StdPeriph_Driver/inc"/>
+									<listOptionValue builtIn="false" value="../src"/>
+									<listOptionValue builtIn="false" value="../libxsvf"/>
+									<listOptionValue builtIn="false" value="../include"/>
+									<listOptionValue builtIn="false" value="../."/>
+									<listOptionValue builtIn="false" value="../Utilities"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1231989299" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="cdt.managedbuild.config.gnu.cross.exe.release.121754665">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.cross.exe.release.121754665" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.cross.exe.release.121754665" name="Release" parent="cdt.managedbuild.config.gnu.cross.exe.release" postbuildStep="arm-none-eabi-objcopy -S  -O binary  &quot;${ProjName}&quot; &quot;${ProjName}.bin&quot; ; arm-none-eabi-objdump -h -S -C  &quot;${ProjName}&quot; &gt; &quot;${ProjName}.lss&quot; ; arm-none-eabi-size &quot;${ProjName}&quot;">
+					<folderInfo id="cdt.managedbuild.config.gnu.cross.exe.release.121754665." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.cross.exe.release.1346944275" name="Cross GCC" superClass="cdt.managedbuild.toolchain.gnu.cross.exe.release">
+							<option id="cdt.managedbuild.option.gnu.cross.prefix.414248178" name="Prefix" superClass="cdt.managedbuild.option.gnu.cross.prefix" value="arm-none-eabi-" valueType="string"/>
+							<option id="cdt.managedbuild.option.gnu.cross.path.1569573617" name="Path" superClass="cdt.managedbuild.option.gnu.cross.path" value="" valueType="string"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.targetPlatform.gnu.cross.1787872255" isAbstract="false" osList="all" superClass="cdt.managedbuild.targetPlatform.gnu.cross"/>
+							<builder buildPath="${workspace_loc:/qwe/Release}" id="cdt.managedbuild.builder.gnu.cross.102365260" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="cdt.managedbuild.builder.gnu.cross"/>
+							<tool command="gcc" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" id="cdt.managedbuild.tool.gnu.cross.c.compiler.864512213" name="Cross GCC Compiler" superClass="cdt.managedbuild.tool.gnu.cross.c.compiler">
+								<option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.option.optimization.level.1751429551" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" value="gnu.c.optimization.level.size" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.1433590364" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.misc.other.409976365" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-c -mthumb -mcpu=cortex-m3 -mfix-cortex-m3-ldrd -mlong-calls -std=gnu99" valueType="string"/>
+								<option id="gnu.c.compiler.option.optimization.flags.1794863499" name="Other optimization flags" superClass="gnu.c.compiler.option.optimization.flags" value="-fdata-sections -ffunction-sections" valueType="string"/>
+								<option id="gnu.c.compiler.option.include.paths.964335540" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="../Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x"/>
+									<listOptionValue builtIn="false" value="../Libraries/CMSIS/CM3/CoreSupport"/>
+									<listOptionValue builtIn="false" value="../Libraries/STM32F10x_StdPeriph_Driver/inc"/>
+									<listOptionValue builtIn="false" value="../src"/>
+									<listOptionValue builtIn="false" value="../libxsvf"/>
+									<listOptionValue builtIn="false" value="../include"/>
+									<listOptionValue builtIn="false" value="../."/>
+									<listOptionValue builtIn="false" value="../Utilities"/>
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1593162882" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
+									<listOptionValue builtIn="false" value="STM32F10X_CL"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.897160097" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.compiler.1013161236" name="Cross G++ Compiler" superClass="cdt.managedbuild.tool.gnu.cross.cpp.compiler">
+								<option id="gnu.cpp.compiler.option.optimization.level.1294702091" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.size" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.476486201" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.other.other.1354219378" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -mthumb -mcpu=cortex-m3 -mfix-cortex-m3-ldrd -mlong-calls -std=gnu++0x -fno-rtti -fno-exceptions" valueType="string"/>
+								<option id="gnu.cpp.compiler.option.optimization.flags.209828951" name="Other optimization flags" superClass="gnu.cpp.compiler.option.optimization.flags" value="-fdata-sections -ffunction-sections" valueType="string"/>
+								<option id="gnu.cpp.compiler.option.include.paths.1086975312" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="../Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x"/>
+									<listOptionValue builtIn="false" value="../Libraries/CMSIS/CM3/CoreSupport"/>
+									<listOptionValue builtIn="false" value="../Libraries/STM32F10x_StdPeriph_Driver/inc"/>
+									<listOptionValue builtIn="false" value="../src"/>
+									<listOptionValue builtIn="false" value="../libxsvf"/>
+									<listOptionValue builtIn="false" value="../include"/>
+									<listOptionValue builtIn="false" value="../."/>
+									<listOptionValue builtIn="false" value="../Utilities"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1773083775" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
+									<listOptionValue builtIn="false" value="STM32F10X_CL"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1868542866" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cross.c.linker.536405704" name="Cross GCC Linker" superClass="cdt.managedbuild.tool.gnu.cross.c.linker"/>
+							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.linker.1839730253" name="Cross G++ Linker" superClass="cdt.managedbuild.tool.gnu.cross.cpp.linker">
+								<option id="gnu.cpp.link.option.flags.534183043" name="Linker flags" superClass="gnu.cpp.link.option.flags" value="-T &quot;${ProjDirPath}/system/stm32flash.ld&quot;  -mthumb -mcpu=cortex-m3 -mfix-cortex-m3-ldrd   -Wl,-Map=linker.map -Wl,-cref  -Wl,--gc-sections -lc -lm -lstdc++" valueType="string"/>
+								<option id="gnu.cpp.link.option.nostdlibs.1543443735" name="No startup or default libs (-nostdlib)" superClass="gnu.cpp.link.option.nostdlibs" value="true" valueType="boolean"/>
+								<option id="gnu.cpp.link.option.nodeflibs.766168468" name="Do not use default libraries (-nodefaultlibs)" superClass="gnu.cpp.link.option.nodeflibs" value="true" valueType="boolean"/>
+								<option id="gnu.cpp.link.option.nostart.481995253" name="Do not use standard start files (-nostartfiles)" superClass="gnu.cpp.link.option.nostart" value="true" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.764341644" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cross.archiver.1256936387" name="Cross GCC Archiver" superClass="cdt.managedbuild.tool.gnu.cross.archiver"/>
+							<tool id="cdt.managedbuild.tool.gnu.cross.assembler.2085999463" name="Cross GCC Assembler" superClass="cdt.managedbuild.tool.gnu.cross.assembler">
+								<option id="gnu.both.asm.option.include.paths.377346554" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="../Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x"/>
+									<listOptionValue builtIn="false" value="../Libraries/CMSIS/CM3/CoreSupport"/>
+									<listOptionValue builtIn="false" value="../Libraries/STM32F10x_StdPeriph_Driver/inc"/>
+									<listOptionValue builtIn="false" value="../src"/>
+									<listOptionValue builtIn="false" value="../libxsvf"/>
+									<listOptionValue builtIn="false" value="../include"/>
+									<listOptionValue builtIn="false" value="../."/>
+									<listOptionValue builtIn="false" value="../Utilities"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.447039933" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="qwe.cdt.managedbuild.target.gnu.cross.exe.798474199" name="Executable" projectType="cdt.managedbuild.target.gnu.cross.exe"/>
+	</storageModule>
+	<storageModule moduleId="refreshScope" versionNumber="1">
+		<resource resourceType="PROJECT" workspacePath="/discovery-test"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cross.exe.debug.1371675403;cdt.managedbuild.config.gnu.cross.exe.debug.1371675403.;cdt.managedbuild.tool.gnu.cross.c.compiler.130729695;cdt.managedbuild.tool.gnu.c.compiler.input.1767316604">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD &quot;${plugin_state_location}/specs.c&quot;" command="arm-none-eabi-gcc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cross.exe.debug.1371675403;cdt.managedbuild.config.gnu.cross.exe.debug.1371675403.;cdt.managedbuild.tool.gnu.cross.cpp.compiler.1907541137;cdt.managedbuild.tool.gnu.cpp.compiler.input.1733256906">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP"/>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD &quot;${plugin_state_location}/specs.cpp&quot;" command="arm-none-eabi-g++" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cross.exe.release.121754665;cdt.managedbuild.config.gnu.cross.exe.release.121754665.;cdt.managedbuild.tool.gnu.cross.cpp.compiler.1013161236;cdt.managedbuild.tool.gnu.cpp.compiler.input.1868542866">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP"/>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD &quot;${plugin_state_location}/specs.cpp&quot;" command="arm-none-eabi-g++" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cross.exe.release.121754665;cdt.managedbuild.config.gnu.cross.exe.release.121754665.;cdt.managedbuild.tool.gnu.cross.c.compiler.864512213;cdt.managedbuild.tool.gnu.c.compiler.input.897160097">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD &quot;${plugin_state_location}/specs.c&quot;" command="arm-none-eabi-gcc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+</cproject>

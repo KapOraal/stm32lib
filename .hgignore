@@ -1,0 +1,9 @@
+syntax: glob
+Debug/
+Release/stm32lib
+*.lss
+*.map
+*.d
+*.bin
+*.o
+hg_log.txt
