@@ -45,6 +45,10 @@ void UartIrqInit(UartIrq_t * uart, lu8 num)
 	UartGPIO_Configuration(num, UartIrq[num]->Sett->Remap);
 	NVIC_Configuration(num);
 
+	UartIrq[num]->__Silent = (float) UartIrq[num]->Sett->Timer.Freq / //
+			(UartIrq[num]->Baud / 10.0f) * //
+			(UartIrq[num]->Sett->Silent + 1);
+
 	USART_InitTypeDef init;
 
 	USART_StructInit(&init);
@@ -82,17 +86,6 @@ lu16 UartIrqRxLen(lu8 num)
 
 			if (UartIrq[num]->__Rx.Counter == count_last)
 			{ // длина не изменилась
-				static u32 baud[UARTS_IRQ_NUM];
-
-				if (baud[num] != UartIrq[num]->Baud)
-				{
-					UartIrq[num]->__Silent = (float) UartIrq[num]->Sett->Timer.Freq / //
-							(UartIrq[num]->Baud / 10) * //
-							UartIrq[num]->Sett->Silent;
-
-					baud[num] = UartIrq[num]->Baud;
-				}
-
 				if (time_cur - UartIrq[num]->__LastByteTime >= UartIrq[num]->__Silent)
 				{
 					UartIrq[num]->__Rx.Len = UartIrq[num]->__Rx.Counter;

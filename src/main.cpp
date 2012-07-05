@@ -71,7 +71,7 @@ static void SerialInit(void)
 {
 	TimerMrInit();
 
-	static const UartConst_t UartDmaConst = { 4, //
+	static const UartConst_t UartDmaConst = { 10, //
 			{ Rx, SIZE_BUF, }, //
 			{ Tx, SIZE_BUF, }, //
 			{ TimerGetXXX, TIMER_MR_FREQ, }, //
@@ -86,7 +86,7 @@ static void SerialInit(void)
 
 	//------------------------------------------
 
-	static const UartConst_t UartIrqConst = { 4, //
+	static const UartConst_t UartIrqConst = { 10, //
 			{ Rx2, SIZE_BUF, }, //
 			{ Tx2, SIZE_BUF, }, //
 			{ TimerGetXXX, TIMER_MR_FREQ, }, //

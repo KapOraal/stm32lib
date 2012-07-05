@@ -39,7 +39,7 @@
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.581338403" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="USE_FULL_ASSERT"/>
 									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
-									<listOptionValue builtIn="false" value="STM32F10X_CL"/>
+									<listOptionValue builtIn="false" value="STM32F10X_MD_VL"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1767316604" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
@@ -61,7 +61,7 @@
 								<option id="gnu.cpp.compiler.option.preprocessor.def.730380292" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="USE_FULL_ASSERT"/>
 									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
-									<listOptionValue builtIn="false" value="STM32F10X_CL"/>
+									<listOptionValue builtIn="false" value="STM32F10X_MD_VL"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1733256906" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
@@ -133,7 +133,7 @@
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1593162882" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
-									<listOptionValue builtIn="false" value="STM32F10X_CL"/>
+									<listOptionValue builtIn="false" value="STM32F10X_MD_VL"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.897160097" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
@@ -154,7 +154,7 @@
 								</option>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.1773083775" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
-									<listOptionValue builtIn="false" value="STM32F10X_CL"/>
+									<listOptionValue builtIn="false" value="STM32F10X_MD_VL"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1868542866" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
